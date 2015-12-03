@@ -1,0 +1,46 @@
+# Maven
+target
+# VM
+.vagrant
+.user_vagrant.rb
+# OS
+.DS_Store
+._*
+# Logs
+*.log
+# IntelliJ IDEA
+*.iml
+*.ipr
+*.iws
+.idea
+.idea/
+# Eclipse
+bin
+.classpath
+.settings/
+.loadpath
+.externalToolBuilders/
+*.launch
+.buildpath
+*.project
+.checkstyle
+#PMD
+.pmd
+.pmdruleset
+# Netbeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+# Derby
+devBootcampDS/
+derby.log
+ 
+#Hector
+tmp/
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*

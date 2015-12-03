@@ -1,0 +1,9 @@
+---
+applications:
+  - name: predix_rdbr_sv
+    buildpack: java_buildpack
+    path: target/predix-rdbr-cf-1.0.0.jar
+services:
+    - postgres_sv
+    - redis_sv 
+    - rabbitmq_sv
