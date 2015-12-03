@@ -1,7 +1,7 @@
 # predix-rdbr-cf
 
-Predix Labs example with RabbitMq, Database and Redis cahe services
-The example contains Rest controller to call database, RabbitMq and Redis services.  The services configuration uses three libraries:
+Predix Labs example with RabbitMq, Database and Redis cache services
+The example contains Rest controller to call database, RabbitMq and Redis services.  The services configuration uses libraries:
 - spring-boot-starter-data-jpa
 - spring-boot-starter-redis
 - spring-boot-starter-amqp
