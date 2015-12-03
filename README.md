@@ -194,8 +194,8 @@ public class ServicesConfiguration {
    http://predix-rdbr-sv.run.aws-usw02-pr.ice.predix.io/visitsseries
    returns visits log
    1448307363066: Barber Shop starts to work
-   1448307363066: Jovannistart to work
-   1448307363066: Marchellostart to work
+   1448307363066: Jovanni start to work
+   1448307363066: Marchello start to work
    1448307363069: Sam is comming in a queue
    1448307363270: Sergey is comming in a queue
    1448307363470: Robert is comming in a queue
@@ -215,6 +215,7 @@ public class ServicesConfiguration {
 - test visits in the Barber Shop   
    ```
    http://predix-rdbr-sv.run.aws-usw02-pr.ice.predix.io/visits
+   
    [{"id":945017,"customerName":"Sam","customerPhone":"(925)-123-4567","barberName":"Jovanni","startTimeVisit":1448063020422,"endTimeVisit":1448063020422,"hairCutPrice":15.2},
    {"id":945018,"customerName":"Sergey","customerPhone":"(925)-223-4567","barberName":"Marchello","startTimeVisit":1448063020425,"endTimeVisit":1448063020425,"hairCutPrice":24.99},
    {"id":945019,"customerName":"Bob","customerPhone":"(925)-323-4567","barberName":"Marchello","startTimeVisit":1448063020429,"endTimeVisit":1448063020429,"hairCutPrice":15.2},

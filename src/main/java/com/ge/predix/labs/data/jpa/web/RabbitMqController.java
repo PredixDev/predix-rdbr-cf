@@ -89,7 +89,7 @@ public class RabbitMqController {
 		String result = new Date().getTime() + ": " + " Barber Shop starts to work" + "<br>";
 		
 		for (Barber barber:barbers){
-			result += new Date().getTime() + ": " + barber.getName() + "start to work" + "<br>";
+			result += new Date().getTime() + ": " + barber.getName() + " start to work" + "<br>";
 			executor.submit(new BarberShop(barber.getName(), barber.getHairCutPrice()));
 		}
 
