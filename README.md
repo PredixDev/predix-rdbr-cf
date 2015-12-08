@@ -251,7 +251,6 @@ customers - Cache contains records:
 1365012:Name:Vic:Phone:(925)-043-4567
    ```
 
-
 #### Developer notes:
 
  - To load in eclipse you may use [SpringSource Tool Suite - STS](https://spring.io/tools/sts/all)  
@@ -305,5 +304,4 @@ customers - Cache contains records:
 			</plugin>
 		</plugins>
 	</build>
-	
     ```
