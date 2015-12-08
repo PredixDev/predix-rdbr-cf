@@ -52,4 +52,9 @@ public class CustomerApiController {
         customerService.updateCustomer(id, customer.getName(), customer.getPhone(), customer.getTStamp());
         return id;
     }
+    
+    @RequestMapping(value = GET_CUSTOMERS_BY_ID, method = RequestMethod.DELETE)
+    public void deleteCustomer(@PathVariable  Integer id) {
+    	customerService.deleteCustomer(id);
+    }
 }
