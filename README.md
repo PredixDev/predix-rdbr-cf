@@ -260,7 +260,7 @@ customers - Cache contains records:
   open eclipse and use the following commands:
   File/Import/General/Existing Projects/Browse to predix-jpa-cf dir   
   ```
- - Maven library dependency for Database and Redis services:
+ - Maven library dependency for Database, RabbitMq and Redis services:
     ```
 	<dependencies>
 		<dependency>
