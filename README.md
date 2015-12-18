@@ -12,31 +12,40 @@ The example contains Rest controller to call database, RabbitMq and Redis servic
 ##Project structure
 
    ``` 
-   com/ge/predix/labs/data/jpa/
-      Application.java
-   com/ge/predix/labs/data/jpa/config
-      CloudFoundryDataSourceConfiguration.java
-      ServicesConfiguration.java
-   com/ge/predix/labs/data/jpa/domain
-      Barber.java
-      Customer.java
-      Visit.java
-   com/ge/predix/labs/data/jpa/service
-      BarberService.java
-      CustomerService.java
-      VisitService.java
-   com/ge/predix/labs/data/jpa/web
-      BarberController.java
-      CacheController.java
-      CustomerApiController.java
-      RabbitMqController.java
-      VisitController.java
-    src/main/resources
-       initialCustomers.sql
-      
-README.md
-manifest.yml
-pom.xml
+├── LICENSE.md
+├── README.md
+├── manifest.yml
+├── pom.xml
+└── src
+    ├── main
+    │   ├── java
+    │   │   └── com
+    │   │       └── ge
+    │   │           └── predix
+    │   │               └── labs
+    │   │                   └── data
+    │   │                       └── jpa
+    │   │                           ├── Application.java
+    │   │                           ├── config
+    │   │                           │   ├── CloudFoundryDataSourceConfiguration.java
+    │   │                           │   └── ServicesConfiguration.java
+    │   │                           ├── domain
+    │   │                           │   ├── Barber.java
+    │   │                           │   ├── Customer.java
+    │   │                           │   └── Visit.java
+    │   │                           ├── service
+    │   │                           │   ├── BarberService.java
+    │   │                           │   ├── CustomerService.java
+    │   │                           │   └── VisitService.java
+    │   │                           └── web
+    │   │                               ├── BarberController.java
+    │   │                               ├── CacheController.java
+    │   │                               ├── CustomerApiController.java
+    │   │                               ├── RabbitMqController.java
+    │   │                               └── VisitController.java
+    │   └── resources
+    │       └── initialCustomers.sql
+    └── test
 
    ``` 
 #### CloudFoundryDataSourceConfiguration.java:
