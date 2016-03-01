@@ -121,7 +121,7 @@ public class ServicesConfiguration {
    ```  
 ## Installation
  - clone repository  
-    `>git clone git@github.build.ge.com:PredixLabs/predix-rdbr-cf.git`
+    `>git clone https://github.com/PredixDev/predix-rdbr-cf.git`
  - check that you have on your market space postgres, rabbitmq and redis services 
  
     `>cf m`
@@ -160,8 +160,10 @@ public class ServicesConfiguration {
 ## Use a browser to test app's REST: 
 
 - test customers
+
+ [http://predix-rdbr-sv.run.aws-usw02-pr.ice.predix.io/customers] (http://predix-rdbr-sv.run.aws-usw02-pr.ice.predix.io/customers)
+
    ```  
- http://predix-rdbr-sv.run.aws-usw02-pr.ice.predix.io/customers
  returns json list of customer from resources/initialCustomers.sql
  [{"id":785001,"name":"Sam","phone":"(925)-123-4567","tstamp":1447719635998},
  {"id":785002,"name":"Sergey","phone":"(925)-223-4567","tstamp":1447719636007},
@@ -181,16 +183,21 @@ public class ServicesConfiguration {
  http://predix-rdbr-sv.run.aws-usw02-pr.ice.predix.io/customers/{id}
  returns customer by id number 
  {"id":785001,"name":"Sam","phone":"(925)-123-4567","tstamp":1447719635998}
+    ```  
  
- http://predix-rdbr-sv.run.aws-usw02-pr.ice.predix.io/search?q=J
+ 
+ [http://predix-rdbr-sv.run.aws-usw02-pr.ice.predix.io/search?q=J] (http://predix-rdbr-sv.run.aws-usw02-pr.ice.predix.io/search?q=J)
+    ```  
  returns all customers containing letter "J" 
  [{"id":785006,"name":"Josh","phone":"(925)-723-4567","tstamp":1447719636022},
  {"id":785011,"name":"Raj","phone":"(925)-033-4567","tstamp":1447719636034}]
    ```  
 
 - test barber Shop
+
+[http://predix-rdbr-sv.run.aws-usw02-pr.ice.predix.io/barbers] (http://predix-rdbr-sv.run.aws-usw02-pr.ice.predix.io/barbers)
    ```  
-   http://predix-rdbr-sv.run.aws-usw02-pr.ice.predix.io/barbers
+  
    [{"id":945015,"name":"Jovanni","hairCutPrice":15.2,"tstamp":1448063020415},
    {"id":945016,"name":"Marchello","hairCutPrice":24.99,"tstamp":1448063020419}]
    
@@ -199,8 +206,9 @@ public class ServicesConfiguration {
    ```  
    
 - test Barber Shop Simulator
+  [   http://predix-rdbr-sv.run.aws-usw02-pr.ice.predix.io/visitsseries] (   http://predix-rdbr-sv.run.aws-usw02-pr.ice.predix.io/visitsseries)
+  
    ```  
-   http://predix-rdbr-sv.run.aws-usw02-pr.ice.predix.io/visitsseries
    returns visits log
    1448307363066: Barber Shop starts to work
    1448307363066: Jovanni start to work
@@ -222,8 +230,11 @@ public class ServicesConfiguration {
    
    ```  
 - test visits in the Barber Shop   
+
+[http://predix-rdbr-sv.run.aws-usw02-pr.ice.predix.io/visits] (http://predix-rdbr-sv.run.aws-usw02-pr.ice.predix.io/visits)
+
    ```
-   http://predix-rdbr-sv.run.aws-usw02-pr.ice.predix.io/visits
+  
    
    [{"id":945017,"customerName":"Sam","customerPhone":"(925)-123-4567","barberName":"Jovanni","startTimeVisit":1448063020422,"endTimeVisit":1448063020422,"hairCutPrice":15.2},
    {"id":945018,"customerName":"Sergey","customerPhone":"(925)-223-4567","barberName":"Marchello","startTimeVisit":1448063020425,"endTimeVisit":1448063020425,"hairCutPrice":24.99},
@@ -251,8 +262,10 @@ barbers - Cache contains records:
 
    ```
 - test Cache by Cache name 
+  [http://predix-rdbr-sv.run.aws-usw02-pr.ice.predix.io/cache/customers] (http://predix-rdbr-sv.run.aws-usw02-pr.ice.predix.io/cache/customers)
+
    ```
-http://predix-rdbr-sv.run.aws-usw02-pr.ice.predix.io/cache/customers
+
 customers - Cache contains records: 
 
 1365001:Name:Sam:Phone:(925)-123-4567
