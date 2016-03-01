@@ -185,7 +185,6 @@ public class ServicesConfiguration {
  {"id":785001,"name":"Sam","phone":"(925)-123-4567","tstamp":1447719635998}
     ```  
  
- 
  [http://predix-rdbr-sv.run.aws-usw02-pr.ice.predix.io/search?q=J] (http://predix-rdbr-sv.run.aws-usw02-pr.ice.predix.io/search?q=J)
     ```  
  returns all customers containing letter "J" 
@@ -195,7 +194,8 @@ public class ServicesConfiguration {
 
 - test barber Shop
 
-[http://predix-rdbr-sv.run.aws-usw02-pr.ice.predix.io/barbers] (http://predix-rdbr-sv.run.aws-usw02-pr.ice.predix.io/barbers)
+  [http://predix-rdbr-sv.run.aws-usw02-pr.ice.predix.io/barbers] (http://predix-rdbr-sv.run.aws-usw02-pr.ice.predix.io/barbers)
+
    ```  
   
    [{"id":945015,"name":"Jovanni","hairCutPrice":15.2,"tstamp":1448063020415},
@@ -206,7 +206,8 @@ public class ServicesConfiguration {
    ```  
    
 - test Barber Shop Simulator
-  [   http://predix-rdbr-sv.run.aws-usw02-pr.ice.predix.io/visitsseries] (   http://predix-rdbr-sv.run.aws-usw02-pr.ice.predix.io/visitsseries)
+
+ [http://predix-rdbr-sv.run.aws-usw02-pr.ice.predix.io/visitsseries] (http://predix-rdbr-sv.run.aws-usw02-pr.ice.predix.io/visitsseries)
   
    ```  
    returns visits log
@@ -231,11 +232,9 @@ public class ServicesConfiguration {
    ```  
 - test visits in the Barber Shop   
 
-[http://predix-rdbr-sv.run.aws-usw02-pr.ice.predix.io/visits] (http://predix-rdbr-sv.run.aws-usw02-pr.ice.predix.io/visits)
+   [http://predix-rdbr-sv.run.aws-usw02-pr.ice.predix.io/visits] (http://predix-rdbr-sv.run.aws-usw02-pr.ice.predix.io/visits)
 
    ```
-  
-   
    [{"id":945017,"customerName":"Sam","customerPhone":"(925)-123-4567","barberName":"Jovanni","startTimeVisit":1448063020422,"endTimeVisit":1448063020422,"hairCutPrice":15.2},
    {"id":945018,"customerName":"Sergey","customerPhone":"(925)-223-4567","barberName":"Marchello","startTimeVisit":1448063020425,"endTimeVisit":1448063020425,"hairCutPrice":24.99},
    {"id":945019,"customerName":"Bob","customerPhone":"(925)-323-4567","barberName":"Marchello","startTimeVisit":1448063020429,"endTimeVisit":1448063020429,"hairCutPrice":15.2},
@@ -243,8 +242,10 @@ public class ServicesConfiguration {
    {"id":945089,"customerName":"Mark","customerPhone":"(925)-063-4567","barberName":"Jovanni","startTimeVisit":1448307367121,"endTimeVisit":1448307367721,"hairCutPrice":15.2}]
    ```  
 - test Cache - show all caches 
+  [http://predix-rdbr-sv.run.aws-usw02-pr.ice.predix.io/cache] (http://predix-rdbr-sv.run.aws-usw02-pr.ice.predix.io/cache) 
+
    ```
-http://predix-rdbr-sv.run.aws-usw02-pr.ice.predix.io/cache
+
 customers - Cache contains records: 
 
 1365001:Name:Sam:Phone:(925)-123-4567
