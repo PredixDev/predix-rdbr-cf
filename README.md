@@ -281,7 +281,7 @@ customers - Cache contains records:
   >mvn eclipse:clean eclipse:eclipse  
   
   open eclipse and use the following commands:
-  File/Import/General/Existing Projects/Browse to predix-jpa-cf dir   
+  File/Import/General/Existing Projects/Browse to predix-rdbr-cf dir   
   ```
  - Maven library dependency for Database, RabbitMq and Redis services:
     ```
