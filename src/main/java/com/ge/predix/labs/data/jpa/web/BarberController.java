@@ -43,9 +43,13 @@ public class BarberController {
     }
 
     @RequestMapping(value = BARBERS, method = RequestMethod.POST)
-    public Integer addBarber(@RequestParam String name, @RequestParam String phone) {
-        return barberService.createBarber(name, new Date()).getId();
+    public Integer addBarber(@RequestBody Barber barber) {
+        return barberService.createBarber(barber.getName(), new Date()).getId();
     }
+//    @RequestMapping(value = BARBERS, method = RequestMethod.POST)
+//    public Integer addBarber(@RequestParam String name, @RequestParam String phone) {
+//    	return barberService.createBarber(name, new Date()).getId();
+//    }
 
     @RequestMapping(value = GET_BARBERS_BY_ID, method = RequestMethod.PUT)
     public Integer updateBarber(@PathVariable  Integer id, @RequestBody Barber barber) {

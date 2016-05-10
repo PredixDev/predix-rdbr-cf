@@ -43,8 +43,8 @@ public class CustomerApiController {
     }
 
     @RequestMapping(value = CUSTOMERS, method = RequestMethod.POST)
-    public Integer addCustomer(@RequestParam String name, @RequestParam String phone) {
-        return customerService.createCustomer(name, phone,  new Date()).getId();
+    public Integer addCustomer(@RequestBody Customer customer) {
+        return customerService.createCustomer(customer.getName(), customer.getPhone(),  new Date()).getId();
     }
 
     @RequestMapping(value = GET_CUSTOMERS_BY_ID, method = RequestMethod.PUT)
