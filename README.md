@@ -49,7 +49,7 @@ The example contains Rest controller to call database, RabbitMq and Redis servic
 
    ``` 
 #### CloudFoundryDataSourceConfiguration.java:
- -  extends AbstractCloudConfig class to get the ConnectionFactory object associated with the bound services Postgress, RabbitMq and Redis
+ -  extends AbstractCloudConfig class to get the ConnectionFactory object associated with the bound services Postgres, RabbitMq and Redis
  
   ```
 @SuppressWarnings("deprecation")
@@ -134,7 +134,7 @@ public class ServicesConfiguration {
    business-operations        beta        Upgrade your service using a subscription-based business model.   
    logstash-3                 free        Logstash 1.4 service for application development and testing   
    p-rabbitmq                 standard    RabbitMQ is a robust and scalable high-performance multi-protocol messaging broker.  
-   postgres                   shared      Reliable PostgrSQL Service   
+   postgres                   shared      Reliable PostgreSQL Service   
    redis-1                    shared-vm   Redis service to provide a key-value store   
    riakcs                     developer   An S3-compatible object store based on Riak CS 
    ...
